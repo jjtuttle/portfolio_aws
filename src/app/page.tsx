@@ -8,6 +8,8 @@ import { ExternalLink, Github, Cloud, Database, Server, Globe, Mail, MapPin } fr
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import DigitalCloud from "@/components/ui/digital-cloud"
+
 import profile_image from '../../public/profile_image.jpg'
 import s3 from '../../public/aws-assets/s3.png'
 import ec2 from '../../public/aws-assets/ec2.png'
@@ -97,6 +99,8 @@ export default function Portfolio() {
       <div className="relative z-10 container mx-auto px-4 py-16 max-w-4xl">
         {/* Hero Section with Static Icons */}
         <div className="text-center mb-16">
+          {/* Large Digital Cloud Background Component */}
+          <DigitalCloud />
           {/* Profile Image with Static AWS Icons */}
           <div className="relative inline-block mb-18">
             {/* Static AWS Icons around profile - no animation */}
